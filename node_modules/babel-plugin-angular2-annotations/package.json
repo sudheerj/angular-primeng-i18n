@@ -1,0 +1,69 @@
+{
+  "name": "babel-plugin-angular2-annotations",
+  "version": "5.1.0",
+  "description": "An experimental babel transformer plugin for Angular 2 annotations",
+  "repository": "shuhei/babel-plugin-angular2-annotations",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --copy-files",
+    "test:unit": "node test/unit",
+    "test:integration": "npm run build && karma start --single-run",
+    "test": "npm run test:unit && npm run test:integration",
+    "clean": "rm -rf lib",
+    "lint": "eslint .",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "es6",
+    "es2015",
+    "babel",
+    "babel-plugin",
+    "angular",
+    "angular2",
+    "ng2",
+    "annotation",
+    "decorator"
+  ],
+  "author": "Shuhei Kagawa <shuhei.kagawa@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/common": "2.0.0-rc.1",
+    "@angular/compiler": "2.0.0-rc.1",
+    "@angular/core": "2.0.0-rc.1",
+    "@angular/platform-browser": "2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
+    "babel-cli": "^6.8.0",
+    "babel-core": "^6.8.0",
+    "babel-eslint": "^6.0.4",
+    "babel-plugin-external-helpers-2": "^6.3.13",
+    "babel-plugin-transform-class-properties": "^6.8.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-flow-strip-types": "^6.8.0",
+    "babel-polyfill": "^6.8.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babelify": "^7.3.0",
+    "babylon": "^6.8.0",
+    "browserify": "^13.0.0",
+    "es6-promise": "^3.1.2",
+    "es6-shim": "0.35.0",
+    "eslint": "^2.9.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-browserify": "^5.0.4",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-source-map-support": "^1.1.0",
+    "phantomjs-prebuilt": "^2.1.7",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.6",
+    "tape": "^4.5.1",
+    "watchify": "^3.7.0",
+    "zone.js": "0.6.12"
+  },
+  "peerDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4"
+  },
+  "dependencies": {
+    "babel-generator": "^6.8.0"
+  }
+}

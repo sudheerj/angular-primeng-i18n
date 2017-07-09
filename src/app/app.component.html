@@ -1,0 +1,69 @@
+<!--<pe-steps [(activeIndex)]="activeIndex" (change)="onChangeStep($event)">
+  &lt;!&ndash; Basic &ndash;&gt;
+  <pe-step label="Basic">-->
+  <h1>1. i18n attribute usage</h1>
+   <div style="margin-bottom: 50px">
+    <label i18n>Enter your faviourite Framework</label>
+    <input id="in" type="text" size="30" pInputText [(ngModel)]="framework"/>
+     <br/><br/>
+    <span i18n="Favourite framework| Display the output of favourite framework@@favouriteFramework">The selected framework is {{framework}}</span>
+   </div>
+  <!--</pe-step>-->
+
+  <!-- Translation Attributes -->
+  <!-- <pe-step label="Translation Attributes"> -->
+<h1>2. i18n Translation attributes</h1>
+    <div style="margin-bottom: 50px">
+    <ng-container i18n>A leading UI Component library</ng-container>
+    <p-panel >
+      <p-header>
+        <div class="ui-helper-clearfix">
+          <span class="ui-panel-title" i18n>PrimeNG</span>
+
+          <!--<p-splitButton styleClass="align-header" i18n-label label="More details.." icon="fa-check"  [model]="items"></p-splitButton>-->
+        </div>
+      </p-header>
+
+      PrimeNG is a collection of rich UI components for Angular. PrimeNG is a sibling of the popular JavaServer Faces Component Suite, PrimeFaces.
+      All widgets are open source and free to use under MIT License.
+      PrimeNG is developed by PrimeTek Informatics, a company with years of expertise in developing open source UI components.
+
+      <p-footer>
+        <!--i18n: optional meaning|optional description -->
+        The current version of PrimeNG is 4.1
+        <!--/i18n-->
+      </p-footer>
+    </p-panel>
+    </div>
+ <!-- </pe-step>-->
+
+  <!-- Singular/Plural -->
+  <!--<pe-step label="Singular/Plural">-->
+<h1>3. Singular/Plural usage</h1>
+    <div style="margin-bottom: 50px">
+    <p-rating [(ngModel)]="angular"></p-rating>
+    <br>
+    <span i18n="@@ratinginput">{angular, plural, =0 {No rating} =1 {One star rating} =2 {Two star rating} =3 {Three star rating} other {Very good}}</span>
+    </div>
+
+ <!-- </pe-step>-->
+
+  <!-- Select -->
+  <!--<pe-step label="Select">-->
+<h1>4. Select usage</h1>
+    <div style="margin-bottom: 50px">
+    <h3>Select your gender</h3>
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <p-radioButton  name="group1" value="m" label="Male" [(ngModel)]="gender"></p-radioButton>
+      </div>
+      <div class="ui-g-12">
+        <p-radioButton name="group1" value="f" label="Female" [(ngModel)]="gender"></p-radioButton>
+      </div>
+    </div>
+      <br/><br/>
+    <span i18n>The selected gender is {gender, select, a {male} f {female}}</span>
+    </div>
+  <!--</pe-step>
+
+</pe-steps>-->

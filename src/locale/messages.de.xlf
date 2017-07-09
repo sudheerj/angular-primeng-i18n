@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="d58a0b634acf483a0b48cf9715066f2cbb4cd8bf" datatype="html">
+        <source>Enter your faviourite Framework</source>
+        <target>Geben Sie Ihren faviourite Framework ein</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="favouriteFramework" datatype="html">
+        <source>The selected framework is <x id="INTERPOLATION"/></source>
+        <target>Das ausgewählte Framework ist <x id="INTERPOLATION"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description"> Display the output of favourite framework</note>
+        <note priority="1" from="meaning">Favourite framework</note>
+      </trans-unit>
+      <trans-unit id="8d270af95e19506f67d707aa325dbc30494acff7" datatype="html">
+        <source>A leading UI Component library</source>
+        <target>Eine führende UI-Komponentenbibliothek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="639e41cb46303692e2551a7b20792f5a42f45dd1" datatype="html">
+        <source>PrimeNG</source>
+        <target>PrimeNG</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bfffa427bdb551f3c7620ed7eb37062986587d19" datatype="html">
+        <source>
+        The current version of PrimeNG is 4.1
+        </source>
+        <target>
+            Die aktuelle Version von PrimeNG ist 4.1
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">optional description</note>
+        <note priority="1" from="meaning">optional meaning</note>
+      </trans-unit>
+      <trans-unit id="ratinginput" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {No rating} =1 {One star rating} =2 {Two star rating} =3 {Three star rating} other {Very good} }</source>
+        <target>{VAR_PLURAL, plural,=0 {Keine Bewertung} =1 {Ein Sternbewertung} =2 {Zwei Sternebewertung} =3 {Drei Sterne Bewertung} other {Sehr gut} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff1b89a0e2dbfda55b4e91853b6a80d03b65cab3" datatype="html">
+        <source>The selected gender is <x id="ICU"/></source>
+        <target>Das ausgewählte Geschlecht ist <x id = "ICU" /></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f221985dca8fefdc675fd82dbc458687da39524" datatype="html">
+        <source>{VAR_SELECT, select, a {male} f {female} }</source>
+        <target>{VAR_SELECT, select, a {männlich} f {weiblich} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
